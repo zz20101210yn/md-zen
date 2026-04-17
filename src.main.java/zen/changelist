@@ -1,0 +1,69 @@
+# fontend plugins list
+frontend-design
+superpowers
+context7
+Playwright
+/plugin marketplace add rafaelcalleja/claude-market-place
+
+
+# 1. 提一个 Java 接口需求
+/opsx:propose 开发用户登录接口 (SpringBoot RESTful)
+
+# 2. 结构化头脑风暴（Superpowers）
+/superpowers:brainstorm
+
+# 3. 生成技术方案（Controller/Service/Repo/测试）
+/superpowers:write-plan
+
+# 4. 按规范自动写 Java 代码（TDD 模式，先测后写）
+/superpowers:execute-plan
+
+# 5. 同步回 OpenSpec 规范（文档自动更新）
+/opsx:apply
+
+
+/opsx:proposal
+C:\Users\Administrator\.claude\plugins\cache\claude-plugins-official\superpowers\5.0.7\skills\brainstorming\SKILL.md
+
+/opsx:design
+C:\Users\Administrator\.claude\plugins\cache\claude-plugins-official\superpowers\5.0.7\skills\writing-plans\SKILL.md
+
+/opsx:apply
+C:\Users\Administrator\.claude\plugins\cache\claude-plugins-official\superpowers\5.0.7\skills\executing-plans\SKILL.md
+
+/opsx:archive
+
+【自定义Schme】
+
+# 进入项目根目录
+cd your-project
+
+# 从内置 schema 派生（例：spec-driven → super-powers）
+openspec schema fork spec-driven super-powers
+
+openspec schema validate super-powers  # 检查 Schema 合法性
+
+
+【Firecrawl】
+https://www.firecrawl.dev/
+npx -y firecrawl-cli@latest init --all -k fc-18ceb98710cb41619a0ef719ef282f15
+npx -y firecrawl-cli@latest init --all --browser
+
+API_KEY：fc-18ceb98710cb41619a0ef719ef282f15
+
+{
+  "mcpServers": {
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-18ceb98710cb41619a0ef719ef282f15"
+      }
+    }
+  }
+}
+
+
+【E2B平台】
+https://e2b.dev/
+API_KEY：e2b_a91f1b2ec28b5431aa636dfbf143ee65b93c47d6
